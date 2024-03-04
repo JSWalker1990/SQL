@@ -1,0 +1,20 @@
+SELECT category "Kitchen Supplies"
+FROM superstore
+WHERE stock_quantity>=10
+ORDER BY price desc;
+
+SELECT SUM(stock_quantity)
+FROM superstore;
+
+SELECT MAX (stock_quantity)
+FROM superstore;
+
+SELECT MAX (stock_quantity), "Appliances"
+FROM superstore
+WHERE price>=90
+ORDER BY price desc;
+
+
+SELECT AVG (average_rating) "Appliances"
+FROM superstore
+ORDER BY price desc;
